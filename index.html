@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function espaciar (cadena, ancho, caracter){
+            if( ancho > array.length){
+                var caracter = caracter || ' ';
+                var array = cadena.split('');
+                var espacios = (ancho - array.length);
+                for(var i= 0; i < espacios; i++){
+                    array.unshift(caracter);
+                }
+                return array.join('');
+            }else{
+                return cadena;
+            }
+        }
+       console.log(espaciarCadena('Pepe', 4, 'p'));
+    </script>
+
+
+</body>
+</html>
