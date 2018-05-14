@@ -9,7 +9,7 @@
 
     <script>
         function espaciarCadena (cadena, ancho, caracter){
-            if( ancho > array.length){
+            if( ancho > cadena.length){
                 var caracter = caracter || ' ';
                 var array = cadena.split('');
                 var espacios = (ancho - array.length);
@@ -21,7 +21,7 @@
                 return cadena;
             }
         }
-       console.log(espaciarCadena('Pepe', 4, 'p'));
+       console.log(espaciarCadena('Pepe', 14, 'c'));
     </script>
 
 
